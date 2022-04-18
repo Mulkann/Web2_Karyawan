@@ -38,9 +38,33 @@
 <body class="text-center">
 
   <main class="form-signin">
-    <form>
+    <form method="post">
       <img class="mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 fw-normal">Log In</h1>
+      
+      <?php
+      if (isset($_POST['login'])) {
+        $loginSQL = "SELECT * FROM pengguna WHERE username='" . $_POST['username'] . "' AND password=MD5('" . $_POST['password'] . "')";
+        include_once "database/koneksi.php";
+
+        $database = new Database();
+        $connection = $database->getConnection();
+        $statement = $connection->prepare($loginSQL);
+        $statement->execute();
+        $row_count = $statement->rowCount();
+
+        if ($row_count > 0 ) {
+          header('location: admin/index.php');
+        }else {
+        ?>
+          <div class="alert alert-danger" role="alert">
+            Username/Password Salah!!
+          </div>
+        <?php
+
+        }
+      }
+      ?>
 
       <div class="form-floating">
         <input type="text" class="form-control" name="username" id="floatingInput" placeholder="Username">
@@ -56,7 +80,7 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" name="sign" type="submit">Sign in</button>
+      <button class="w-100 btn btn-lg btn-primary" name="login" type="submit">Sign in</button>
       <p class="mt-5 mb-3 text-muted">@Mulkan_19630576 - 2022</p>
     </form>
   </main>
