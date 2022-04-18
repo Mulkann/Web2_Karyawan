@@ -57,7 +57,7 @@
         </label>
       </div>
       <button class="w-100 btn btn-lg btn-primary" name="sign" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">@Mulkan_19630576 2022</p>
+      <p class="mt-5 mb-3 text-muted">@Mulkan_19630576 - 2022</p>
     </form>
   </main>
 
