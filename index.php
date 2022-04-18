@@ -57,9 +57,11 @@
           header('location: admin/index.php');
         }else {
         ?>
+
           <div class="alert alert-danger" role="alert">
             Username/Password Salah!!
           </div>
+          
         <?php
 
         }
