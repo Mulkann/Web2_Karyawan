@@ -1,12 +1,13 @@
 <?php 
     class Database{
+
         private $host;
         private $nama_database;
         private $username;
         private $password;
         public $connection;
 
-        function __construck(){
+        function __construct(){
             $this->host = "localhost";
             $this->username = "root";
             $this->password = "";

@@ -44,7 +44,7 @@
       
       <?php
       if (isset($_POST['login'])) {
-        $loginSQL = "SELECT * FROM pengguna WHERE username='" . $_POST['username'] . "' AND password=MD5('" . $_POST['password'] . "')";
+        $loginSQL = "SELECT * FROM pengguna WHERE username='". $_POST['username'] ."' AND password=MD5('". $_POST['password'] ."')";
         include_once "database/koneksi.php";
 
         $database = new Database();
