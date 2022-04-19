@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  include_once"../database/koneksi.php";
+  if (isset($_SESSION['username'])) {
+    
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -288,3 +296,9 @@
 </body>
 
 </html>
+
+<?php
+    }else {
+      header('location: ../index.php');
+    }
+?>

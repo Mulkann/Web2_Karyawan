@@ -54,6 +54,9 @@
         $row_count = $statement->rowCount();
 
         if ($row_count > 0 ) {
+          session_start();
+          $_SESSION['username'] = $_POST['username'];
+          
           header('location: admin/index.php');
         }else {
         ?>
