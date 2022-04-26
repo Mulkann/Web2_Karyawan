@@ -19,6 +19,12 @@
                 Data Bagian
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="chevrons-left"></span>
+                Log Out
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
