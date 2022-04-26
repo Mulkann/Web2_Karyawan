@@ -57,7 +57,7 @@
           session_start();
           $_SESSION['username'] = $_POST['username'];
 
-          header('location: admin/dashboard.php');
+          header('location: admin/main.php');
         }else {
         ?>
 
