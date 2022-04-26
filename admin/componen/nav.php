@@ -2,25 +2,25 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" href="?page=dashboard">
                 <span data-feather="home"></span>
                 Dashboard
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="?page=karyawan">
                 <span data-feather="users"></span>
                 Data Karyawan
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="?page=databagian">
                 <span data-feather="layers"></span>
                 Data Bagian
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="../logout.php">
                 <span data-feather="chevrons-left"></span>
                 Log Out
               </a>
