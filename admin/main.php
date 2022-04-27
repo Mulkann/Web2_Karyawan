@@ -1,6 +1,7 @@
 <?php
   session_start();
-  include_once"../database/koneksi.php";
+  include_once "../database/koneksi.php";
+  
   if (isset($_SESSION['username'])) {
     
 ?>
