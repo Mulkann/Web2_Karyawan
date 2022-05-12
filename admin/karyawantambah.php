@@ -26,7 +26,6 @@
         <button type="submit" name="input" class="btn btn-primary">Submit</button>
     </form>
     </div>
-</main>
 
 <?php 
     include_once "../database/koneksi.php";
@@ -48,5 +47,14 @@
         $statement->bindParam(4, $status_menikah);
         $statement->execute();
 
+        ?>
+        <script type="text/javascript">
+            alert("Input Data Sukses !")
+            window.location="?page=karyawan";
+        </script>
+        <?php
     }
 ?>
+
+</main>
+
