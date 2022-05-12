@@ -23,16 +23,22 @@
             <label class="form-check-label" for="jenis_kelamin">
                 Laki-laki
             </label>
-            </div>
-            <div class="form-check">
+        </div>
+        <div class="form-check">
             <input class="form-check-input" type="radio" value="Perempuan" name="jenis_kelamin" id="jenis_kelamin">
             <label class="form-check-label" for="jenis_kelamin">
                 Perempuan
             </label>
-            </div>
+        </div><br>
         <div class="mb-3">
             <label class="form-label">Status Menikah</label>
-            <input type="text" class="form-control" id="statusmenikah" placeholder="Enter Status" name="status_menikah">
+            <select class="form-select" aria-label="Default select example" name="status_menikah">
+                <option selected>Pilih Status</option>
+                <option value="Belum Menikah">Belum Menikah</option>
+                <option value="Menikah Anak 0">Menikah Anak 0</option>
+                <option value="Menikah Anak 1">Menikah Anak 1</option>
+                <option value="Menikah Anak 2">Menikah Anak 2</option>
+            </select>
         </div>
         <button type="submit" name="input" class="btn btn-primary">Submit</button>
     </form>
