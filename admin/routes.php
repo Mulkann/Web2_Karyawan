@@ -8,6 +8,9 @@
             case 'karyawan':
                 include "karyawan.php";
                 break;
+            case 'karyawantambah':
+                include "karyawantambah.php";
+                 break;
             case 'databagian':
                 include "databagian.php";
                 break;
