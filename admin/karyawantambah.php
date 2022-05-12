@@ -15,10 +15,21 @@
             <label class="form-label">Nama Karyawan</label>
             <input type="text" class="form-control" id="namakaryawan" placeholder="Enter Nama Karyawan" name="nama_karyawan">
         </div>
-        <div class="mb-3 mt-3">
+        <div>
             <label class="form-label">Jenis Kelamin</label>
-            <input type="text" class="form-control" id="jeniskelamin" placeholder="Enter Jenis Kelamin" name="jenis_kelamin">
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Laki-laki" name="jenis_kelamin" id="jenis_kelamin">
+            <label class="form-check-label" for="jenis_kelamin">
+                Laki-laki
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" value="Perempuan" name="jenis_kelamin" id="jenis_kelamin">
+            <label class="form-check-label" for="jenis_kelamin">
+                Perempuan
+            </label>
+            </div>
         <div class="mb-3">
             <label class="form-label">Status Menikah</label>
             <input type="text" class="form-control" id="statusmenikah" placeholder="Enter Status" name="status_menikah">
