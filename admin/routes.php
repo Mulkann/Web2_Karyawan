@@ -6,10 +6,10 @@
                 include "dashboard.php";
                 break;
             case 'karyawan':
-                include "karyawan.php";
+                include "karyawan/karyawan.php";
                 break;
             case 'karyawantambah':
-                include "karyawantambah.php";
+                include "karyawan/karyawantambah.php";
                  break;
             case 'databagian':
                 include "databagian.php";
