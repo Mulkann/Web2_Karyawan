@@ -10,7 +10,10 @@
                 break;
             case 'karyawantambah':
                 include "karyawan/karyawantambah.php";
-                 break;
+                break;
+            case 'karyawanedit':
+                include "karyawan/karyawanedit.php";
+                break;
             case 'databagian':
                 include "databagian.php";
                 break;
