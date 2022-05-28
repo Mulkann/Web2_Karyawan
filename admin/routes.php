@@ -14,6 +14,9 @@
             case 'karyawanedit':
                 include "karyawan/karyawanedit.php";
                 break;
+            case 'karyawanhapus':
+                include "karyawan/karyawanhapus.php";
+                break;
             case 'databagian':
                 include "databagian.php";
                 break;
