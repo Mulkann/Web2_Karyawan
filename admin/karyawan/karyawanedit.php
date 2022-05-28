@@ -35,7 +35,7 @@
     
             ?>
             <script type="text/javascript">
-                alert("Input Data Sukses !")
+                alert("Update Data Sukses !")
                 window.location="?page=karyawan";
             </script>
             <?php
@@ -84,11 +84,6 @@
         <button type="submit" name="input" class="btn btn-primary">Submit</button>
     </form>
     </div>
-
-<?php 
-
-
-?>
 
 </main>
 
