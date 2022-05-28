@@ -1,7 +1,7 @@
 
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Data Karyawan</h1>
+    <h1 class="h2">Update Data Karyawan</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
       </div>
   </div>
@@ -37,12 +37,12 @@
               <td><?php echo $data["jenis_kelamin"] ?></td>
               <td><?php echo $data["status_menikah"] ?></td>
               <td>
-                <button class="btn btn-danger btn-sm">
-                  <span data-feather="x-circle"></span>
-                </button>
-                <button class="btn btn-info btn-sm">
+                <a href="?page=karyawanedit&id=<?php echo $data['id'];?>" class="badge bg-info">
                   <span data-feather="refresh-ccw"></span>
-                </button>
+                </a>
+                <a href="?page=karyawanhapus&id=<?php echo $data['id'];?>" class="badge bg-danger">
+                  <span data-feather="x-circle"></span>
+                </a>
               </td>
             </tr>
             <?php 
