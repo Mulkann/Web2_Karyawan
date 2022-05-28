@@ -18,7 +18,16 @@
                 include "karyawan/karyawanhapus.php";
                 break;
             case 'databagian':
-                include "databagian.php";
+                include "bagian/databagian.php";
+                break;
+            case 'bagiantambah':
+                include "bagian/bagiantambah.php";
+                break;
+            case 'bagianedit':
+                include "bagian/bagianedit.php";
+                break;
+            case 'bagianhapus':
+                include "bagian/bagianhapus.php";
                 break;
             default:
                 include "dashboard.php";
